@@ -1,0 +1,1006 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+nav {
+    background-color: #333333;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-name {
+    font-size: 0.95rem;
+    text-decoration: none;
+    margin: 20px 0;
+    color: #E0E0E0;
+}
+
+.nav-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container > ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.nav-container > ul > li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.95rem;
+    height: 100%;
+    padding: 0 15px;
+    transition: 0.3s;
+    color: #E0E0E0;
+}
+
+.nav-container > ul > li a:hover {
+    background-color: #0a0a0a;
+}
+
+.booking-btn {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+    font-size: 0.90rem;
+    color: #333333;
+}
+
+.booking-btn:hover {
+    cursor: pointer;
+    background-color: #616161;
+    color: white;
+}
+
+#Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 170px 20px 120px 20px;
+    gap: 100px;
+    color: #333333;
+    background-color: #F5F5F5;
+    scroll-margin-top: 50px;
+}
+
+.home-image {
+    width: 500px;
+    height: 300px;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0.2), 0px 0px 10px rgb(0, 0, 0, 0.1);
+}   
+
+#Home > .home-description-cont button {
+    background-color: #c2c2c2;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #333333;
+}
+
+#Home > .home-description-cont button:hover {
+    background-color: #333333;
+    color: white;
+    transform: scale(1.1);
+}
+
+#pre-About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 75px;
+    background-color: #E9E9E9;
+    color: #333333;
+    scroll-margin-top: 50px;
+}
+
+#pre-About > div {
+    background-color: #D3D3D3;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.4);
+    text-align: center;
+    width: 300px;
+    padding: 50px;
+    border-radius: 15px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #636363;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.extended {
+    width: 70px;
+}
+
+.icon-img {
+    height: 70px;
+    border-radius: 50%;
+}
+
+#pre-About > div > h3 {
+    margin: 5px 0px;
+}
+
+#pre-About > div:hover {
+    transform: scale(1.03);
+}
+
+#pre-About > div button {
+    background-color: #a8a7a7;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #333333;
+}
+
+#pre-About > div button:hover {
+    background-color: #333333;
+    color: white;
+}
+
+#main-About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    gap: 200px;
+    padding: 100px 50px;
+    color: #333333;
+}
+
+#main-About1, #main-About2, #main-About3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 50px;
+    scroll-margin-top: 50px;
+}
+
+#main-About > div > div > a > button {
+    background-color: #c2c2c2;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #333333;
+}
+
+#main-About > div > div > a > button:hover {
+    background-color: #333333;
+    color: white;
+}
+
+#Price-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #F1F1F1;
+    color: #333333;
+    padding: 65px 50px;
+    scroll-margin-top: 50px;
+}
+
+#Price-list > div {
+    background-color: #dddddd;
+    padding: 40px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.4);
+}
+
+#Price-list > div > p {
+    margin: 10px 0 10px 0;
+}
+
+#Price-list > div > h3 {
+    margin: 10px 0 15px 0;
+}
+
+#Price-list > div > a > button {
+    background-color: #b6b6b6;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #333333;
+}
+
+#Price-list > div > a > button:hover {
+    background-color: #333333;
+    color: white;
+}
+
+#Contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding: 50px 50px;
+    color: #333333;
+    background-color: #E0E0E0;    
+    scroll-margin-top: 50px;
+}
+
+#Contacts > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 25px 25px;
+    background-color: #A6A6A6;
+    border-radius: 20px;
+}
+
+.contacts-div > div{
+    display: flex;  
+    align-items: center;
+    text-align: left;
+    gap: 5px;
+}
+
+.contacts-div > div > img {
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+}
+
+.contacts-div > div > p {
+    margin: 5px 0px;
+}
+
+footer {
+    background-color: #333333;
+    padding: 20px 50px;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+footer > div > p {
+    color: #e0e0e0;
+}
+
+footer > div > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+footer > div > a {
+    text-decoration: none;
+    color: #E0E0E0;
+}
+
+footer > div > a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 970px) and (max-width: 1200px) {
+    #Home {
+        gap: 40px;
+    }
+
+    #pre-About {
+        gap: 30px;
+        padding: 50px;
+    }
+
+    #main-About img {
+        width: 500px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 969px) {
+    nav {
+        padding: 0 12px;
+    }
+
+    .brand-container {
+        gap: 5px;
+    }
+
+    .brand-name {
+        font-size: 0.93rem;
+    }
+
+    .nav-container {
+        gap: 10px;
+    }
+
+    .nav-container > ul > li a {
+        font-size: 0.93rem;
+        padding: 0 8px;
+    }
+
+    .nav-container > div > a > button {
+        font-size: 0.93rem;
+        padding: 8px 13px;
+    }
+
+    #Home {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 100px 15px 50px 15px;
+    }
+
+    .home-image {
+        width: 450px;
+        height: 250px;
+    }
+
+    .home-description-cont {
+        text-align: center;
+        font-size: 0.93rem;
+    }
+
+    #pre-About {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #pre-About > div {
+        padding: 30px;
+        font-size: 0.93rem;
+    }
+
+    .icon-img {
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .extended {
+        width: 60px;
+    }
+
+    #main-About {
+        gap: 80px;
+        padding: 50px 25px;
+    }
+
+    #main-About1, #main-About2, #main-About3 {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 0;
+        font-size: 0.93rem;
+    }
+
+    #main-About2 {
+        flex-direction: column-reverse;
+    }
+
+    #main-About img {
+        width: 450px;
+    }
+
+    #Price-list {
+        gap: 30px;
+        padding: 20px 10px;
+        font-size: 0.93rem;
+    }
+
+    #Price-list > div {
+        padding: 25px 19px;
+    }
+
+    #Contacts {
+        padding: 30px;
+    }
+
+    #Contacts > div {
+        gap: 40px ;
+        font-size: 0.93rem;
+    }
+
+    #Contacts > div img {
+        width: 18px;
+        height: 18px;
+    }
+
+    footer {
+        font-size: 0.93rem;
+        padding: 20px 10px;
+        gap: 50px;
+    }
+    
+    footer > div img {
+        width: 75px;
+        height: 75px;
+    }
+
+    footer > div h3 {
+        margin: 5px 0px ;
+    }
+
+    footer > div p {
+        margin: 10px 0px ;
+    }
+
+    .footer-div {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 749px) {
+    nav {
+        padding: 0 12px;
+    }
+
+    .brand-container {
+        gap: 5px;
+    }
+
+    .brand-name {
+        font-size: 0.93rem;
+    }
+
+    .nav-container {
+        gap: 10px;
+    }
+
+    .nav-container > ul > li a {
+        font-size: 0.93rem;
+        padding: 0 8px;
+    }
+
+    .nav-container > div > a > button {
+        font-size: 0.93rem;
+        padding: 8px 13px;
+    }
+
+    #Home {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 100px 15px 50px 15px;
+    }
+
+    .home-image {
+        width: 450px;
+        height: 250px;
+    }
+
+    .home-description-cont {
+        text-align: center;
+        font-size: 0.93rem;
+    }
+
+    #pre-About {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+    }
+
+    #pre-About > div {
+        padding: 30px;
+        font-size: 0.93rem;
+    }
+
+    .icon-img {
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .extended {
+        width: 60px;
+    }
+
+    #main-About {
+        gap: 80px;
+        padding: 50px 25px;
+    }
+
+    #main-About1, #main-About2, #main-About3 {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 0;
+        font-size: 0.93rem;
+    }
+
+    #main-About2 {
+        flex-direction: column-reverse;
+    }
+
+    #main-About img {
+        width: 450px;
+    }
+
+    #Price-list {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+        font-size: 0.93rem;
+    }
+
+    #Price-list > div {
+        padding: 25px 19px;
+        width: 238px;
+    }
+
+    #Contacts {
+        padding: 30px;
+    }
+
+    #Contacts > div {
+        gap: 40px ;
+        font-size: 0.93rem;
+    }
+
+    #Contacts > div img {
+        width: 18px;
+        height: 18px;
+    }
+
+    footer {
+        font-size: 0.93rem;
+        padding: 20px 10px;
+        gap: 50px;
+    }
+    
+    footer > div img {
+        width: 75px;
+        height: 75px;
+    }
+
+    footer > div h3 {
+        margin: 5px 0px ;
+    }
+
+    footer > div p {
+        margin: 10px 0px ;
+    }
+
+    .footer-div {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 599px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .brand-container > a > img {
+        width: 25px;
+        height: 25px;
+        padding: 0;
+    }
+
+    .brand-container > a {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .brand-name {
+        display: none;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    #Home {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding: 50px 10px 25px 10px;
+    }
+
+    .home-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .home-description-cont {
+        text-align: center;
+        width: 100%;
+    }
+
+    .home-description-cont > h1{
+        font-size: 1.2rem;
+    }
+
+    .home-description-cont > p{
+        font-size: 0.8rem;
+    }
+
+    #Home > .home-description-cont button {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 8px 13px;
+    }
+    
+    #pre-About {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #pre-About > div {
+        padding: 15px;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    #pre-About > div h3 {
+        font-size: 1.2rem;
+    }
+
+    #pre-About > div button {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 8px 13px;
+    }
+
+    .icon-img {
+        height: 55px;
+        border-radius: 50%;
+    }
+
+    .extended {
+        width: 55px;
+    }
+
+    #main-About {
+        gap: 80px;
+        padding: 25px 15px;
+    }
+
+    #main-About1, #main-About2, #main-About3 {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 0;
+        font-size: 0.80rem;
+        width: 100%;
+    }
+
+    #main-About1 h3, #main-About2 h3, #main-About3 h3 {
+        font-size: 1.2rem;
+    }
+
+    #main-About > div > div > a > button {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 8px 13px;
+    }
+
+    #main-About2 {
+        flex-direction: column-reverse;
+    }
+
+    #main-About img {
+        width: 100%;
+    }
+
+    #Price-list {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 20px;
+        font-size: 0.80rem;
+    }
+
+    #Price-list > div > h3 {
+        font-size: 1.2rem;
+    }
+
+    #Price-list > div > a > button {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 8px 13px;
+    }
+
+    #Price-list > div {
+        padding: 15px 19px;
+        width: 80%;
+    }
+
+    #Contacts {
+        padding: 20px;
+    }
+
+    #Contacts > div {
+        gap: 20px ;
+        font-size: 0.80rem;
+        width: 100%;
+    }
+
+    #Contacts > div > div h4 {
+        font-size: 1rem;
+    }
+
+    #Contacts > div img {
+        width: 16px;
+        height: 16px;
+    }
+
+    footer {
+        font-size: 0.80rem;
+        padding: 20px 5px;
+        gap: 50px;
+    }
+    
+    footer > div img {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer > div h3 {
+        margin: 5px 0px ;
+    }
+
+    footer > div p {
+        margin: 10px 0px ;
+    }
+
+    .footer-div {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 413px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .brand-container > a > img {
+        width: 25px;
+        height: 25px;
+        padding: 0;
+    }
+
+    .brand-container > a {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .brand-name {
+        display: none;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    #Home {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding: 50px 10px 25px 10px;
+    }
+
+    .home-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .home-description-cont {
+        text-align: center;
+        width: 100%;
+    }
+
+    .home-description-cont > h1{
+        font-size: 1.2rem;
+    }
+
+    .home-description-cont > p{
+        font-size: 0.8rem;
+    }
+
+    #Home > .home-description-cont button {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 8px 13px;
+    }
+    
+    #pre-About {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #pre-About > div {
+        padding: 15px;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    #pre-About > div h3 {
+        font-size: 1.2rem;
+    }
+
+    #pre-About > div button {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 8px 13px;
+    }
+
+    .icon-img {
+        height: 55px;
+        border-radius: 50%;
+    }
+
+    .extended {
+        width: 55px;
+    }
+
+    #main-About {
+        gap: 80px;
+        padding: 25px 15px;
+    }
+
+    #main-About1, #main-About2, #main-About3 {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 0;
+        font-size: 0.80rem;
+        width: 100%;
+    }
+
+    #main-About1 h3, #main-About2 h3, #main-About3 h3 {
+        font-size: 1.2rem;
+    }
+
+    #main-About > div > div > a > button {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 8px 13px;
+    }
+
+    #main-About2 {
+        flex-direction: column-reverse;
+    }
+
+    #main-About img {
+        width: 100%;
+    }
+
+    #Price-list {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 20px;
+        font-size: 0.80rem;
+    }
+
+    #Price-list > div > h3 {
+        font-size: 1.2rem;
+    }
+
+    #Price-list > div > a > button {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 8px 13px;
+    }
+
+    #Price-list > div {
+        padding: 15px 19px;
+        width: 80%;
+    }
+
+    #Contacts {
+        padding: 20px;
+    }
+
+    #Contacts > div {
+        gap: 20px ;
+        font-size: 0.80rem;
+        width: 100%;
+    }
+
+    #Contacts > div > div h4 {
+        font-size: 0.95rem;
+    }
+
+    #Contacts > div img {
+        width: 16px;
+        height: 16px;
+    }
+
+    footer {
+        font-size: 0.75rem;
+        padding: 20px 5px;
+        gap: 30px;
+    }
+    
+    footer > div img {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer > div h3 {
+        margin: 5px 0px ;
+    }
+
+    footer > div p {
+        margin: 10px 0px ;
+    }
+
+    .footer-div {
+        gap: 5px;
+    }
+}
